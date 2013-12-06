@@ -1,0 +1,136 @@
+CARDSIZE = 6.30,8.9
+BORDER = ROUNDED,#000000,0.1
+
+[title_loc] = 1.05,0.2,4.3,0.5
+[keyword_loc] = 1.05,0.7,4.3,0.8
+[text_loc] = 0.25,1.5,5.85,7.2
+[military_loc] = 0.1,0.4,0.8,0.7
+[influence_loc] = 5.25,0.4,1,0.7 
+
+[locations] = 1-25
+[locations_pp] = 1-5
+[locations_hq] = 6-10
+[locations_er] = 11-15
+[locations_cd] = 16-20
+[locations_cb] = 21-25
+
+[roles] = 26-30
+[roles_president] = 26
+[roles_interior] = 27
+[roles_general] = 28
+[roles_spy] = 29
+[roles_propaganda] = 30
+
+[factions] = 31-41
+[factions_mil] = 31-33
+[factions_mil_1] = 31
+[factions_mil_2] = 32
+[factions_mil_3] = 33
+
+[factions_pol] = 34-37
+[factions_pol_1] = 34
+[factions_pol_2] = 35
+[factions_pol_3] = 36
+[factions_pol_4] = 37                      
+
+[factions_und] = 38-41
+[factions_und_1] = 38
+[factions_und_2] = 39
+[factions_und_3] = 40
+[factions_und_4] = 41
+
+#LOCATIONS    
+RTFTEXT = [locations],"{\qc\i\fs20 Location}",[keyword_loc]
+
+RTFTEXT = [locations_pp],"{\qc\b\fs24 People's Parliament}",[title_loc]                                                            
+RTFTEXT = [locations_pp],"{\qc The {\b Factions Phase} happens for all players. You pay 1 less than you bid in the Factions Phase.}",[text_loc]
+RTFTEXT = [locations_hq],"{\qc\b\fs24 Headquarters}",[title_loc]                                                                
+RTFTEXT = [locations_hq],"{\qc You may play one card from your Hand or the top of your Deck into your Coup pool this turn, after pools and loyalties have been revealed.\par \par There is a Coup Excuse this turn.}",[text_loc]
+RTFTEXT = [locations_er],"{\qc\b\fs24 Embassy Row}",[title_loc]                                                                
+RTFTEXT = [locations_er],"{\qc Draw a card before the Factions Phase ({\i whether it happens or not.})}",[text_loc]
+RTFTEXT = [locations_cd],"{\qc\b\fs24 Club District}",[title_loc]                                                                
+RTFTEXT = [locations_cd],"{\qc The {\b Personalities Phase} happens for all players. You pay 1 less than you bid in the Personalities Phase.}}",[text_loc]
+RTFTEXT = [locations_cb],"{\qc\b\fs24 Central Bank}",[title_loc]                                                                
+RTFTEXT = [locations_cb],"{\qc The {\b Banking Phase} happens for you.}",[text_loc]
+
+#ROLES
+[crole] = [roles_president]
+RTFTEXT = [crole],"{\qc\b\fs24 El Presidente}",[title_loc]
+RTFTEXT = [crole],"{\qc\i\fs20 Father of His Country}",[keyword_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 4}",[military_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 2}",[influence_loc]
+RTFTEXT = [crole],"{\ql - Assigns Ministerial positions\par \par - Proposes the Budget}",[text_loc]
+
+[crole] = [roles_interior]
+RTFTEXT = [crole],"{\qc\b\fs24 Interior Minister}",[title_loc]
+RTFTEXT = [crole],"{\qc\i\fs20 Guardian of Security}",[keyword_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 2}",[military_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 1}",[influence_loc]
+RTFTEXT = [crole],"{\ql - May force the Budget}",[text_loc] 
+
+[crole] = [roles_general]
+RTFTEXT = [crole],"{\qc\b\fs24 Generalissimo}",[title_loc]
+RTFTEXT = [crole],"{\qc\i\fs20 Iron Fist of the State}",[keyword_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 6}",[military_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 0}",[influence_loc]
+RTFTEXT = [crole],"{\ql }",[text_loc]
+
+[crole] = [roles_spy]
+RTFTEXT = [crole],"{\qc\b\fs24 Intelligence Minister}",[title_loc]
+RTFTEXT = [crole],"{\qc\i\fs20 Man of Many Eyes}",[keyword_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 0}",[military_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 1}",[influence_loc]
+RTFTEXT = [crole],"{\ql {\b Assassin:} Targets a Location and a Player.\par {\b Success:} Cause Confusion. Steal 1 Prestige from the target. Examine their hand. You may Kill a non-Basic Personality in their Hand or Discard.}",[text_loc]
+
+[crole] = [roles_propaganda]
+RTFTEXT = [crole],"{\qc\b\fs24 Propaganda Minister}",[title_loc]
+RTFTEXT = [crole],"{\qc\i\fs20 The Voice of Truth}",[keyword_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 0}",[military_loc]
+RTFTEXT = [crole],"{\qc\b\fs36 2}",[influence_loc]
+RTFTEXT = [crole],"{\ql - Draw an extra card during the Draw step.}",[text_loc]
+
+#FACTIONS
+RTFTEXT = [factions_mil],"{\qc\i\fs20 Faction - Military}",[keyword_loc]
+RTFTEXT = [factions_pol],"{\qc\i\fs20 Faction - Political}",[keyword_loc]
+RTFTEXT = [factions_und],"{\qc\i\fs20 Faction - Underworld}",[keyword_loc]
+
+[num] = 1
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs24 The Army}",[title_loc]
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs36 3}",[military_loc]
+RTFTEXT = [factions_mil_[num]],"{\ql This Faction's Controller gains Military +3.\par\par {\b Prestige:} Any Player who contributed at least 6 Military from personalities to a Coup this turn gains 2 Prestige.}",[text_loc]
+[num] = 2
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs24 The Navy}",[title_loc]
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs36 3}",[military_loc]
+RTFTEXT = [factions_mil_[num]],"{\ql This Faction's Controller gains Military +3.\par\par {\b Prestige:} Any Player on the winning side of a Coup this turn gains 3 Prestige.}",[text_loc]
+[num] = 3
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs24 The Air Force}",[title_loc]
+RTFTEXT = [factions_mil_[num]],"{\qc\b\fs36 1}",[military_loc]
+RTFTEXT = [factions_mil_[num]],"{\ql This Faction's Controller gains Military +1.\par\par {\b Prestige:} El Presidente gains 1 Prestige.}",[text_loc]
+
+[num] = 1
+RTFTEXT = [factions_pol_[num]],"{\qc\b\fs24 The Church}",[title_loc]
+RTFTEXT = [factions_pol_[num]],"{\ql {\b Prestige:} This Faction's Controller gains 2 Prestige.}",[text_loc]
+[num] = 2
+RTFTEXT = [factions_pol_[num]],"{\qc\b\fs24 The Party Elite}",[title_loc]
+RTFTEXT = [factions_pol_[num]],"{\ql Other players must beat this Faction’s Controller’s bid by 3 or more to outbid him in the Personalities Phase.\par\par {\b Prestige:} Any Player who recruited a Political Personality this turn gains 2 Prestige.}",[text_loc]
+[num] = 3
+RTFTEXT = [factions_pol_[num]],"{\qc\b\fs24 The Unions}",[title_loc]
+RTFTEXT = [factions_pol_[num]],"{\ql This Faction’s Controller may pay money in the place of Influence in the Personalities Phase, with 1MP replacing 2 Influence.}",[text_loc]
+[num] = 4
+RTFTEXT = [factions_pol_[num]],"{\qc\b\fs24 The Farmers}",[title_loc]
+RTFTEXT = [factions_pol_[num]],"{\ql {\b Prestige:} This Faction's Controller gains 1 Prestige.}",[text_loc]
+
+[num] = 1
+RTFTEXT = [factions_und_[num]],"{\qc\b\fs24 The Mob}",[title_loc]
+RTFTEXT = [factions_und_[num]],"{\ql The {\b Banking Phase} happens for all players.\par\par{\b Prestige:} This Faction's Controller gains 1 Prestige for each other Player who bought Prestige with Money in the Banking Phase.}",[text_loc]
+[num] = 2
+RTFTEXT = [factions_und_[num]],"{\qc\b\fs24 The Smugglers}",[title_loc]
+RTFTEXT = [factions_und_[num]],"{\ql The {\b Banking Phase} happens for all players.\par\par This Faction's Controller may pay Influence from his hand ({\i not from Roles, Factions or other such sources}) to buy Prestige, with 2 Influence replacing 1MP.}",[text_loc]
+[num] = 3
+RTFTEXT = [factions_und_[num]],"{\qc\b\fs24 The Resistance}",[title_loc]
+RTFTEXT = [factions_und_[num]],"{\qc\b\fs36 2}",[military_loc]
+RTFTEXT = [factions_und_[num]],"{\ql This Faction’s Controller gains Military +2.\par\par There is a Coup Excuse this turn.\par\par{\b Prestige:} Any Player who Killed a Personality belonging to this Faction’s Controller this turn gains 3 Prestige.}",[text_loc]
+[num] = 4
+RTFTEXT = [factions_und_[num]],"{\qc\b\fs24 The Rum Brewers}",[title_loc]
+RTFTEXT = [factions_und_[num]],"{\ql {\b Prestige:} If there was a Coup this turn, any player who did not contribute Military from Personalities to it gains 2 Prestige.}",[text_loc]
+                                                                

@@ -1,0 +1,30 @@
+CARDSIZE = 6.30,8.9
+BORDER = ROUNDED,#000000,0.1
+
+[title_loc] = 1.05,0.2,4.3,0.5
+[keyword_loc] = 1.05,0.7,4.3,0.8
+[text_loc] = 0.25,1.5,5.85,7.2
+[military_loc] = 0.1,0.4,0.8,0.7
+[influence_loc] = 5.25,0.4,1,0.7
+
+#EVENTS
+[card] = 1-2
+RTFTEXT = [card],"{\qc\b\fs24 UN Condemnation}",[title_loc]
+RTFTEXT = [card],"{\qc\i\fs20 Event}",[keyword_loc]
+RTFTEXT = [card],"{\ql There is a Coup Excuse this turn.\par\par This Event's Controller gains 1 Prestige.}",[text_loc]
+[card] = 3-4
+RTFTEXT = [card],"{\qc\b\fs24 Regime Change}",[title_loc]
+RTFTEXT = [card],"{\qc\i\fs20 Event}",[keyword_loc]
+RTFTEXT = [card],"{\ql The {\b Personalities Phase} happens for all players this turn.\par\par This Event's Controller may Kill a Personality in their Hand or Discard.}",[text_loc]
+[card] = 5-6
+RTFTEXT = [card],"{\qc\b\fs24 Coalition Squabbles}",[title_loc]
+RTFTEXT = [card],"{\qc\i\fs20 Event}",[keyword_loc]
+RTFTEXT = [card],"{\ql This Event's Controller chooses a Faction, whose effects do not apply for the rest of the turn.}",[text_loc]
+[card] = 7
+RTFTEXT = [card],"{\qc\b\fs24 Arranged Accidents}",[title_loc]
+RTFTEXT = [card],"{\qc\i\fs20 Event}",[keyword_loc]
+RTFTEXT = [card],"{\ql This Event's Controller must Kill a Personality in any Player's Discard.}",[text_loc]
+[card] = 8
+RTFTEXT = [card],"{\qc\b\fs24 Global Depression}",[title_loc]
+RTFTEXT = [card],"{\qc\i\fs20 Event}",[keyword_loc]
+RTFTEXT = [card],"{\ql El Presidente draws 1 less Money card for Foreign Aid this turn.\par\par This Event's Controller gains 1 Prestige.}",[text_loc]
