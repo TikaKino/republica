@@ -1,0 +1,26 @@
+CARDSIZE = 6.30,8.9
+BORDER = ROUNDED,#000000,0.1
+
+[title_loc] = 1.05,0.2,4.3,0.5
+[keyword_loc] = 1.05,0.7,4.3,0.8
+[text_loc] = 0.25,1.5,5.85,7.2
+[military_loc] = 0.1,0.4,0.8,0.7
+[influence_loc] = 5.25,0.4,1,0.7
+[number_example] = "{\qc\b\fs36 1}"
+
+#LINKMULTI = count
+LINK = "nandeck_data_run.txt"
+
+[all] = 1-{(count)}
+
+RTFTEXT = [all],[title],[title_loc]
+RTFTEXT = [all],[keywords],[keyword_loc]
+RTFTEXT = [all],[textbox],[text_loc]
+
+IF=[military]<>-1
+    RTFTEXT = [all],[military],[military_loc]
+ENDIF
+
+IF=[influence]<>-1
+    RTFTEXT = [all],[influence],[influence_loc]
+ENDIF
