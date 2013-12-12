@@ -1,0 +1,13 @@
+count,title,keywords,textbox,military,influence
+1,"{\qc\b\fs24 The Army}","{\qc\i\fs20 Faction - Military}","{\ql This Faction's Controller gains Military +5.}","{\qc\b\fs36 5}",-1
+1,"{\qc\b\fs24 The Border Guards}","{\qc\i\fs20 Faction - Military}","{\ql This Faction's Controller gains Military +3.}","{\qc\b\fs36 3}",-1
+1,"{\qc\b\fs24 The Railworkers}","{\qc\i\fs20 Faction - Political - Union}","{\ql After the Factions phase ends, this Faction's Controller may Draw 2 Cards, then Discard 2 Cards.}",-1,-1
+1,"{\qc\b\fs24 The Coal Union}","{\qc\i\fs20 Faction - Political - Union}","{\ql After the Factions phase ends, this Faction's Controller may Draw 1 Money Card.}",-1,-1
+1,"{\qc\b\fs24 The Dockhands}","{\qc\i\fs20 Faction - Political - Union}","{\ql After the Factions phase ends, this Faction's Controller may discard and replace a Personality in the Personality Pool.}",-1,-1
+1,"{\qc\b\fs24 The Smugglers}","{\qc\i\fs20 Faction - Underworld}","{\ql This Faction's Controller may pay Influence from his hand ({\i not from Roles, Factions or other such sources}) to buy Prestige in the Banking Phase, with 2 Influence replacing 1MP.}",-1,-1
+1,"{\qc\b\fs24 The Resistance}","{\qc\i\fs20 Faction - Underworld}","{\ql This Faction’s Controller gains Military +3.\par\par There is a Coup Excuse this turn.\par\par{\b Prestige:} Any Player who Killed a Personality belonging to this Faction’s Controller this turn gains 3 Prestige.}","{\qc\b\fs36 3}",-1
+1,"{\qc\b\fs24 The Nightclubs}","{\qc\i\fs20 Faction - Underworld}","{\ql {\b Prestige:} This Faction's Controller may pay 2 Influence from his hand to Draw a Money Card.}",-1,-1
+1,"{\qc\b\fs24 Global Depression}","{\qc\i\fs20 Event}","{\ql El Presidente draws 1 less Money card for Foreign Aid this turn.}",-1,-1
+2,"{\qc\b\fs24 Mistress}","{\qc\i\fs20 Personality - Political}","{\ql {\b Action:} At the start of the Personalities phase: Discard and replace a Personality in the Personality Pool.}","{\qc\b\fs36 0}","{\qc\b\fs36 3}"
+2,"{\qc\b\fs24 Assassin}","{\qc\i\fs20 Personality - Underworld}","{\ql {\b Assassin:} Targets two Locations and a Player.\par{\b Success:} Cause Confusion. Steal 2 Prestige from the target. Examine their hand. You may Kill a non-Basic Personality in their Hand or Discard.}","{\qc\b\fs36 1}","{\qc\b\fs36 1}"
+1,"{\qc\b\fs24 Blackmail Snapper}","{\qc\i\fs20 Personality - Underworld}","{\ql {\b Assassin:} Targets two Locations and a Player.\par{\b Success:} Steal 1 Prestige from the target. Steal at least 2MP from the target ({\i more if they cannot make 2MP exactly, all their money if they don't have enough.})}","{\qc\b\fs36 0}","{\qc\b\fs36 2}"
